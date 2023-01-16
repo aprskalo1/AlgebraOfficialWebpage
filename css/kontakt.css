@@ -1,0 +1,108 @@
+#form-background {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.form-container {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  background-color: white;
+  position: fixed;
+  height: 580px;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 0px 10px rgb(85, 85, 85);
+  z-index: 10;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: rgb(24, 31, 73);
+  width: 100%;
+  margin-left: 1px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.contact-form {
+  width: 700px;
+}
+
+#text-box {
+  height: 30px;
+  width: 100%;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+}
+
+#FullName {
+  height: 30px;
+  width: 100%;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+}
+
+#newsletter {
+  margin-bottom: 10px;
+}
+
+#button-exit {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 7px;
+  background-color: rgb(255, 54, 54);
+  border-color: transparent;
+}
+
+#button-submit {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 7px;
+  background-color: rgb(39, 126, 255);
+  border-color: transparent;
+}
+
+#message-text {
+  height: 100px;
+  width: 100%;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  resize: none;
+}
+
+#contact-text {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1px;
+}
+
+#button-submit:hover {
+  background-color: rgb(0, 102, 255);
+  ;
+}
+
+#button-exit:hover {
+  background-color: rgb(255, 0, 0);
+}

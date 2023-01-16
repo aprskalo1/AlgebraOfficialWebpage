@@ -1,0 +1,59 @@
+body {
+    overflow: hidden;
+}
+
+#nastavni-plan {
+    display: none;
+}
+
+#typing-div {
+    z-index: 1;
+    height: 200px;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px black;
+    font-size: 50px;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+#first-text {
+    border-right: 8px solid transparent;
+    animation: blinkCursor 0.5s infinite;
+    padding-right: 5px;
+}
+
+#second-text {
+    border-right: 8px solid transparent;
+    animation: none;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+#main_video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+    transform: translateY(100px);
+}
+
+
+#outside-form {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes blinkCursor {
+    0% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: white;
+        ;
+    }
+}

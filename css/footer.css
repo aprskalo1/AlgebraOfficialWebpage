@@ -1,0 +1,30 @@
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    background-image: url('../img/zaiskri-bg.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-content {
+    font-family: Arial Black, Helvetica, sans-serif;
+    font-size: 50px;
+    color: white;
+    -webkit-text-stroke: 1px rgb(44, 44, 44);
+    text-align: center;
+  }
+  
+  .center {
+    display: block;
+    text-align: center;
+  }
+  
+  .red {
+    color: red;
+    text-shadow: 2px 2px 2px black;
+  }
+  

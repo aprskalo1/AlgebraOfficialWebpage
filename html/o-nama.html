@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5a17698d7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/o-nama.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/kontakt.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/scroll.js"></script>
+    <title>SUPIT PROJEKTNI</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="prijavi-se.html">Prijavi se <i class="fas fa-sign-in-alt"></i></a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="pocetna.html"><i class="fas fa-home"></i> Početna</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" href="#"><i class="fas fa-inbox"></i> O nama</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="novosti.html"><i class="fas fa-info-circle"></i> Novosti</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Nastavni plan</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#" id="contact-popup"><i class="fas fa-envelope"></i> Kontakt</a>
+                </li>
+            </ul>
+            <div class="navbar-buttons ml-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-1"><a class="nav-link" id="nav-link-orange" href="#"
+                            onclick="scrollToDiv('nase-vrijednosti')">Naše vrijednosti</a> </li>
+                    <li class="nav-item mx-1"><a class="nav-link" id="nav-link-orange" href="#"
+                            onclick="scrollToDiv('povijest')">Povijest</a></li>
+                    <li class="nav-item mx-1"><a class="nav-link" id="nav-link-orange" href="#"
+                            onclick="scrollToDiv('algebra-grupa')">Algebra grupa</a></li>
+                    <li class="nav-item mx-1"><a class="nav-link" id="nav-link-orange" href="#"
+                            onclick="scrollToDiv('kako-do-nas')">Kako do nas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="form-background">
+        <div class="form-container" id="form-container">
+            <form class="contact-form" action="https://www.fulek.com/mvc/supit/project-contact-form" method="post">
+                <div class="title"><i class="fa-solid fa-envelope"></i> Kontaktirajte nas</div>
+                <br>
+                <label for="FullName" id="contact-text">Puno ime</label>
+                <br>
+                <input type="text" id="FullName" name="FullName">
+                <br>
+                <label for="email" id="contact-text">E-mail</label>
+                <br>
+                <input type="text" id="text-box" name="email">
+                <br>
+                <label for="importance" id="contact-text">Važnost</label>
+                <br>
+                <select id="text-box" name="importance">
+                    <option value="low" id="contact-text">Niska</option>
+                    <option value="medium" id="contact-text">Srednja</option>
+                    <option value="high" id="contact-text">Visoka</option>
+                </select><br>
+                <label for="message" id="contact-text">Poruka</label>
+                <br>
+                <textarea id="message-text" name="message" rows="5" cols="30"></textarea>
+                <br>
+                <label for="newsletter" id="contact-text">Želim primati obavijesti</label>
+                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                <br>
+                <input type="submit" value="POŠALJI" id="button-submit">
+                <input type="button" value="ODUSTANI" id="button-exit">
+            </form>
+        </div>
+    </div>
+
+    <div class="campus"></div>
+
+    <div class="o-nama">
+        <p>O nama</p>
+    </div>
+    <div class="podnaslov" id="nase-vrijednosti">
+        <p><i class="fas fa-bolt"></i> Naše vrijednosti</p>
+    </div>
+
+    <div class="text">
+        <span>
+            Obecajemo pomoc u pronalasku onoga sto volis
+            raditi i da cemo te poticati na izvrsnost -
+            kvalitetom programa i procesa, strastvenim
+            predavacima, globalno aplikabilnim znanjem te
+            poticanjem kvalitete zivota.
+            <br>
+            <br>
+            Postoje vrijednosti u koje vjerujemo od prvog
+            dana, koje dijele nasi predavaci, ali i nasi
+            polaznici, bez obzira imaju li oni 7 ili 77
+            godina. Pomno smo odabrali atribute koji su
+            odraz tih nasih vrijednosti i koji su kljucni u
+            kreiranju jasne i jedinstvene slike o nasem
+            brandu.
+        </span>
+    </div>
+
+    <div class="container">
+        <div class="item">
+            <span>SPECIJALIZIRANO I KVALITETNO</span>
+            <br>
+            Svi naši nastavni programi i procesi baziraju se na
+            globalnim standardima i najrelevantnijim znanjima
+            potrebnim za uspjeh na tržištu rada. Spajamo snažnu
+            teorijsku podlogu s praktičnim znanjima kako bismo
+            pomogli našim polaznicima da pronađu ono što vole
+            raditi. Koliko smo uspješni u tome najbolje pokazuje
+            činjenica da 100% naših studenata pronalazi posao
+            unutar 6 mjeseci od diplome, dok čak 85% polaznika
+            programa cjeloživotnog obrazovanja promijeni posao
+            ili napreduje u roku 3 mjeseca nakon završetka
+            programa.
+        </div>
+        <div class="item">
+            <span>IZBALANSIRANO</span>
+            <br>
+            Obrazovanje za nas podrazumijeva akademsku, ali i
+            društvenu komponentu čovjeka. Snažno vjerujemo da je
+            čovjek spreman na napredak tek kada pronađe
+            ravnotežu u životu. Stoga kreiramo okruženje koje će
+            u jednakoj mjeri poticati kvalitetu obrazovanja i
+            ispunjen i kvalitetan život. Ulaganje u obrazovanje
+            uvijek znači ulaganje u sebe. Vjerujemo da upravo
+            upisom studija ili programa obrazovanja postižemo
+            balans između svakodnevnih obveza i kvalitetnog
+            vremena koje odvajamo za sebe.
+        </div>
+        <div class="item">
+            <span>IZVRSNO</span>
+            <br>
+            Izvrsnost je ključna emocionalna diferencijacija
+            našeg branda – pomažemo našim polaznicima i
+            studentima da pronađu ono što vole raditi i postanu
+            izvrsni u tome. Našu izvrsnost dokazuju brojna
+            priznanja i certifikati za kvalitetu naših nastavnih
+            programa i procesa, ali i vrhunski strastveni
+            predavači koji prenose tu iskru na sve studente i
+            polaznike koji dođu u Algebru. Na putu do pronalaska
+            onog što volimo postoji onaj trenutak kad shvatimo
+            da mi to možemo i mi to želimo raditi, mi taj moment
+            nazivamo iskra, zato želimo da svi koji su dio
+            Algebre postanu izvrsni u onom što vole raditi
+            odnosno da zaiskre u Algebri.
+        </div>
+    </div>
+
+    <div class="podnaslov">
+        <p><i class="fa-solid fa-clock-rotate-left" id="povijest"></i> Povijest</p>
+    </div>
+
+    <div class="text">
+        <span>
+
+            Zajedno gradimo povijest Algebre. Poceli smo
+            prije gotovo dvadeset godina i s tobom
+            nastavljamo put prema novim uspjesima.
+            <br>
+            <br>
+            Otvorili smo Algebra LAB, jedinstveni
+            inovacijski centar koji pomaze tvrtkama, javnim
+            sluzbama i start-up projektima razviti
+            inovativna poslovna rjesenja koja ce potaknuti
+            konkurentnost gospodarstva. Investicijom od cak
+            tri milijuna kuna, jedini u Hrvatskoj smo
+            objedinili tri kljucna elementa – odjel
+            primijenjenog istrazivanja i razvoja u
+            digitalnom podrucju, start-up inkubator s
+            coworking prostorom te inovativnu edukacijsku
+            platformu namijenjenu sirenju najnaprednijih
+            tehnoloskih i poslovnih znanja. Algebra LAB novo
+            je mjesto je za inovacije, kreacije, ideje i
+            snove o buducnosti.
+        </span>
+    </div>
+
+    <div class="container">
+        <div class="item">
+            <span>
+                <span>1998.</span> OSNOVANA ALGEBRA D.O.O. PODUZEĆE ZA OBRAZOVANJE
+                ODRASLIH
+            </span>
+            <br>
+            Algebra d.o.o. osnovana je u travnju 1998. godine
+            kao poduzeće za obrazovanje odraslih. U lipnju 1998.
+            bilježi prve polaznike seminara primjene računala i
+            računalnih aplikacija. U rujnu 1998. bilježi prvi
+            znatniji porast broja korisnika usluga, da bi se
+            kroz višeznamenkasti rast u godinama 1999. i 2000.
+            etablirala na tržištu edukacije odraslih, na
+            području korisničke primjene informacijskih
+            tehnologija (IT).
+        </div>
+        <div class="item">
+            <span>
+                <span>2000.</span> MICROSOFT AUTHORIZED TRAINING CENTER (ATC)
+            </span>
+            <br>
+            Nakon dosta napora i truda uvjerili smo 2000 godine
+            lokalni ured Microsoft Hrvatska da zadovoljavamo
+            postavljene uvjete kako bismo mogli postati
+            autorizirani obrazovni centar za njihove
+            tehnologije. Ova, prva u nizu, autorizacija
+            distancirala nas je do drugih obrazovnih ponuđača iz
+            tog vremena te nam je osigurala dostup službenim
+            nastavnim materijalima i povoljnije uvjete
+            licenciranja softvera. Ovaj smo status naknadno
+            značajno unaprijedili kako bismo dosegli „Gold“
+            epitet.
+        </div>
+        <div class="item">
+            <span>
+                <span>2001.</span> ADOBE, MACROMEDIA I AUTODESK TRAINING CENTER
+            </span>
+            <br>
+            Potaknuti uspjehom dobivanja Microsoft akreditacije,
+            u 2001 godini smo svu snagu uložili upravo na
+            zadovoljavanje uvjeta za uspostavu službenog trening
+            centra i za druge proizvođače te smo iste godine
+            postali: Macromedia Authorized Training Center Adobe
+            Authorized Training Provider Autodesk Authorized
+            Training Center i IBM Business Partner.
+        </div>
+        <div class="item">
+            <span>
+                <span>2002.</span> OSNOVANO UČILIŠTE ALGEBRA
+            </span>
+            <br>
+            Početkom 2002. godine Algebra d.o.o. osniva Učilište
+            Algebra, a iste godine seli se u znatno veći i
+            kvalitetniji prostor u Maksimirsku 58a, Zagreb gdje
+            se polazincima na raspolaganje stavlja ukupno 6
+            učionica i oko 800 m2 uređenog obrazovnog prostora.
+            Prema procjenama Microsoft Hrvatska udio Algebre na
+            hrvatskom tržištu edukacijskih usluga za Microsoft
+            alate narastao je u toj godini na 30%–35%.
+        </div>
+        <div class="item">
+            <span>
+                <span>2003.</span> UČLIŠTE ALGEBRA POSTALO VODEĆI PONUĐAČ OBRAZOVANJA
+                U IT-U
+            </span>
+            <br>
+            Uvođenjem niza novih programa obrazovanja odraslih u
+            akreditiranih kod Ministarstva zaduženog za
+            obrazovanje kroz nekoliko prethodnih godina, Algebra
+            je u 2003 u samo godinu dana sa 5. skočila na 1.
+            mjesto ponuđača informatičke edukacije (mjereno
+            prema ostvarenom prihodu i broju polaznika),
+            ostvarivši rast u jednoj godini poslovanja od 91,8%.
+            Poziciju vodećeg obrazovnog sustava u obrazovanju
+            odraslih držimo još i danas.
+        </div>
+        <div class="item">
+            <span>
+                <span>2007.</span> VISOKO UČILIŠTE ALGEBRA DOBIVA AKREDITACIJU
+            </span>
+            <br>
+            Nakon više od 2 godine intenzivnih priprema, krajem
+            2007. je osnovana Visoka škola za primijenjeno
+            računarstvo koja je dopusnicu Ministarstva znanosti,
+            obrazovanja i sporta dobila u lipnju 2008. godine.
+            Ovaj događaj postavio je nove smjernice razvoja
+            Algebra obrazovne grupe te je na određeni način
+            uspješno zaokružio nastojanja za pokretanjem
+            visokoškolskog obrazovnog program koja su inicirana
+            još u 2002. godini kroz provedbu IBM ACE obrazovnog
+            programa. Provedba nastavnog programa započinje u
+            prostorijama FER-a te u zgradi Algebre u
+            Maksimirskoj ulici.
+        </div>
+        <div class="item">
+            <span>
+                <span>2013.</span> IZVRSNI REZULTATI U EUROPSKIM PROJEKTIMA, KVALITETA I DALJE U FOKUSU
+            </span>
+            <br>
+            Dodatno smo proširili svoje kapacitete dodavanjem
+            novih učionica na adresi u Ilici, a uspješno smo
+            prošli i provjeru kvalitete provedbe programa u
+            organizaciji FER-a i do 2016. produžili certifikat
+            „Odobreno od FER-a“. Čitava Algebra grupa je
+            ocijenjena kao vodeći ECDL centar u Hrvatskoj, a
+            istaknuti smo i kao primjer u provedbi EU projekata
+            što je okrunio i posjet povjerenika EU g. Andora.
+            Visoko učilište Algebra od ove godine ima novi
+            logotip i vizualni identitet.
+        </div>
+        <div class="item">
+            <span>
+                <span>2015.</span> STUDIJ DIGITALNOG MARKETINGA - PONOVNO POMIČEMO GRANICE
+            </span>
+            <br>
+            Nakon dvije godine intenzivnih priprema te
+            provedenog postupka inicijalne akreditacije, Visoko
+            učilište Algebra dobilo je u siječnju 2015.
+            dopusnice novi preddiplomski i diplomski Studij
+            digitalnog marketinga, prvi u ovom dijelu Europe.
+            Znamo da je još mnogo toga što treba napraviti
+            ispred nas. Znamo da se tek ponekad smijemo okrenuti
+            i pogledati unazad kako bismo se prisjetili lijepih
+            trenutaka koji su obilježili naših skoro 20 godina
+            rada. Hvala Vam što ste u nas vjerovali sve ove
+            godine i pomogli nam da rastemo.
+        </div>
+        <div class="item">
+            <span>
+                <span>2016.</span> POKREĆEMO MBA E-LEADERSHIP STUDIJ – DOING BUSINESS
+                IN DIGITAL ECONOMY
+            </span>
+            <br>
+            U svoj sustav pripojili smo jednu od prvih hrvatskih
+            poslovnih škola: International Graduate Business
+            School (IgBS Zagreb) a u svoj program uvodimo i
+            diplomski MBA studij eLeadershipa (eVođenja) na
+            engleskom jeziku. Ovaj studij u većem dijelu izvode
+            nastavnici s University of Indiana, Kelley School of
+            Business, jedne od pet vodećih američkih poslovnih
+            škola prema uglednom poslovnom časopisu Bloomberg,
+            dok su pojedine specifične teme rezervirane za
+            hrvatske i europske profesore.
+        </div>
+    </div>
+
+    <div class="podnaslov">
+        <p><i class="fa-solid fa-users" id="algebra-grupa"></i> Algebra grupa</p>
+    </div>
+
+    <div class="text">
+        <span>
+            Algebra grupa je vodeci hrvatski i regionalni
+            privatni obrazovni sustav prisutan u 30 gradova
+            diljem Republike Hrvatske, s vise od 120 stalno
+            zaposlenih i vise od 400 vanjskih suradnika.
+            <br>
+            <br>
+            Kroz proteklih gotovo 20 godina rada, Algebra je
+            postala najznacajniji regionalni edukacijski
+            partner tvrtki Microsoft, Cisco, Adobe,
+            Autodesk, ecdl, VMware, ec-council i drugih. U
+            obrazovanju odraslih skolujemo oko 18.000
+            polaznika seminara i programa obrazovanja
+            godisnje, dok u visokom obrazovanju upisujemo
+            svake godine vise od 300 novih studenata.
+            Kvalitetu poslovanja Algebre prepoznali su kako
+            nasi klijenti tako i svi znacajniji proizvodaci
+            softvera, a dokazuje ga i implementirani iso
+            9001:2000 certifikat koji smo uveli jos 2004.
+            godine.
+        </span>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <span>EC-COUNCIL ACCREDITED TRAINING CENTER - KREDITIRANI TRENING CENTAR</span>
+            <img src="../img/EC-Council.png" alt="">
+        </div>
+        <div class="grid-item">
+            <span>CISCO NETWORKING ACADEMY, CISCO AKADEMIJA MREŽNIH TEHNOLOGIJA</span>
+            <img src="../img/1024px-Cisco_academy.png" alt="">
+        </div>
+        <div class="grid-item">
+            <span>VUE ISPITNI CENTAR ZA TESTIRANJE <br>KANDIDATA</span>
+            <img src="../img/VUElogo.jpg" alt="">
+        </div>
+        <div class="grid-item">
+            <span>AUTODESK TRENING CENTAR ZA AUTOCAD, INVENTOR I 3D STUDIO ALATE</span>
+            <img src="../img/autodesk.png" alt="">
+        </div>
+        <div class="grid-item">
+            <span>ADOBE AUTORIZIRANI TRENING PARTNER ZA GRAFIČKE I WEB APLIKACIJE</span>
+            <img src="../img/auth_training_cntr.gif" alt="">
+        </div>
+        <div class="grid-item">
+            <span>MICROSOFT GOLD CERTIFIED PARTNER FOR LEARNING SOLUTIONS</span>
+            <img src="../img/ms_novo.png" alt="">
+        </div>
+        <div class="grid-item">
+            <span>RED HAT AKADEMIJA – PODRŽAVA NASTAVU I CERTIFIKACIJSKE ISPITE</span>
+            <img src="../img/redhatLogo.png" alt="">
+        </div>
+        <div class="grid-item">
+            <span>ORACLE APPROVED EDUCATION CENTER – PROVEDBA SLUŽBENE ORACLE EDUKACIJE</span>
+            <img src="../img/oracleLogo.png" alt="">
+        </div>
+    </div>
+
+    <div class="podnaslov">
+        <p><i class="fas fa-compass" id="kako-do-nas"></i> Kako do nas?</p>
+    </div>
+
+    <div class="location-container">
+        <div class="text-container">
+            <div class="location-text">
+                <div class="text-title"><i class="fa-sharp fa-solid fa-location-dot" id="icon"></i> Lokacija</div>
+                <div class="text">
+                    Algebra se nalazi u okviru kampusa Hrvatskog
+                    katoličkog sveučilišta (HKS) u Zagrebu, na
+                    adresi Ilica 242. Ulaz u kampus smješten je
+                    u Domobranskoj ulici. Unutar kampusa,
+                    Algebra djeluje na dvije lokacije: u
+                    novoobnovljenoj zgradi s početka 20.
+                    stoljeća koja se prostire na više od 3500
+                    četvornih metara, te na 2. katu suvremene
+                    nove poslovne zgrade koja se nalazi u
+                    neposrednoj blizini.
+                </div>
+                <div class="text-title"><i class="fas fa-compass" id="icon"></i> Lokacija</div>
+                <div class="text">
+                    Algebra je smještena u zapadnom dijelu grada
+                    Zagreba, na sto metara udaljenosti od
+                    tramvajske stanice Sv. Duh i na15-ak km
+                    udaljenosti od zagrebačke zračne luke.
+                </div>
+            </div>
+            <div class="location-text">
+                <div class="text-title"><i class="fa-sharp fa-solid fa-bus-simple" id="icon"></i> Javni prijevoz</div>
+                <div class="text">
+                    Od glavnog trga, Trga bana Jelačića,
+                    udaljena je 6 tramvajskih stanica vožnje,
+                    linijama 6 i 11 u smjeru Črnomerca. Od
+                    Glavnog željezničkog kolodvora udaljena je 8
+                    stanica vožnje tramvajskom linijom 6,
+                    također u smjeru Črnomerca.
+                </div>
+                <div class="text-title"><i class="fa-solid fa-car" id="icon"></i> Osobno vozilo</div>
+                <div class="text">
+                    O informacije o dolasku automobilom iz
+                    smjera Slavonska avenija dostupne su ovdje,
+                    iz smjera Zagrebačke avenije ovdje, a iz
+                    smjera Jadranske avenije
+                </div>
+                <div class="text-title"><i class="fa-solid fa-parking" id="icon"></i> Parking</div>
+                <div class="text">
+                    Unutar kampusa posjetiteljima je na
+                    raspolaganju otvoreni parking koji se
+                    naplaćuje 4 kune po satu, dok se izvan
+                    kampusa nalazi III. parkirna zona
+                    Zagrebparkinga.
+                </div>
+            </div>
+        </div>
+        <div class="location">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207634.1658692624!2d15.713251145018159!3d45.674024886114765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6d74e265877%3A0x1a4f4eae9fc461c5!2sAlgebra%20University%20College!5e0!3m2!1sen!2shr!4v1673025199643!5m2!1sen!2shr"
+                width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            BUDI IZVRSTAN U ONOME ŠTO VOLIŠ<br>
+            <span class="red">ZAISKRI</span>
+        </div>
+    </footer>
+
+    <script src="../js/contactPopup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+body {
+    overflow: hidden;
+}
+
+.sign-in-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58vh;
+}
+
+#signin-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+}
+
+#sign-in-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
+}
+
+#prijavi-se-textbox-email {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid grey;
+    background-color: rgb(245, 245, 255);
+}
+
+#prijavi-se-textbox-password {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid grey;
+    background-color: rgb(245, 245, 255);
+}
+
+
+#sign-in-button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(83, 83, 83);
+    height: 35px;
+    border-radius: 7px;
+    border-color: transparent;
+}
+
+#sign-in-button:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+#sign-in-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(58, 58, 58);
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 1px;
+}
+
+#register {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(58, 58, 58);
+    margin-top: 10px;
+}
+
+#register a {
+    text-decoration: none;
+    color: rgb(72, 117, 255);
+}
