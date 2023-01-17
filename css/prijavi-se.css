@@ -77,6 +77,13 @@ body {
     margin-top: 10px;
 }
 
+#status-message {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    padding-top: 10px;
+
+}
+
 #register a {
     text-decoration: none;
     color: rgb(72, 117, 255);
