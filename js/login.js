@@ -29,8 +29,8 @@ window.onload = function () {
                 if (!podaci.isSuccess) {
                     $('#status-message').text("Korisnik nije pronađen! Pokušajte ponovo.").show().delay(3000).hide(300);
                 } else {
-                    localStorage.setItem('token', podaci['token']);
-                    localStorage.setItem('username', podaci['username']);
+                    localStorage.setItem('token', podaci.data.token);
+                    localStorage.setItem('username', podaci.data.username);
                     $('#status-message').text("Prijava uspješna! Preusmjeravanje na početnu stranicu.").show().delay(3000).hide(300);
                     setTimeout(() => {
                         window.location.replace("pocetna.html");

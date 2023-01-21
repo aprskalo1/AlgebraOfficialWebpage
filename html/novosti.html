@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/kontakt.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/auth.js"></script>
     <title>SUPIT PROJEKTNI</title>
 </head>
 
@@ -20,8 +21,11 @@
     <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="nav-item" id="prijavi-se">
                     <a class="nav-link" href="prijavi-se.html">Prijavi se <i class="fas fa-sign-in-alt"></i></a>
+                </li>
+                <li class="nav-item" id="odjavi-se">
+                    <a class="nav-link" href="#">Odjavi se <i class="fas fa-sign-out-alt"></i></a>
                 </li>
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="pocetna.html"><i class="fas fa-home"></i> Početna</a>
@@ -32,47 +36,52 @@
                 <li class="nav-item mx-3">
                     <a class="nav-link active" href="#"><i class="fas fa-info-circle"></i> Novosti</a>
                 </li>
-                <li class="nav-item mx-3">
+                <li class="nav-item mx-3" id="nastavni-plan">
                     <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Nastavni plan</a>
                 </li>
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="#" id="contact-popup"><i class="fas fa-envelope"></i> Kontakt</a>
                 </li>
             </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <span id="username"></span>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <div id="form-background">
-    <div class="form-container" id="form-container">
-        <form class="contact-form" action="https://www.fulek.com/mvc/supit/project-contact-form" method="post">
-            <div class="title"><i class="fa-solid fa-envelope"></i> Kontaktirajte nas</div>
-            <br>
-            <label for="FullName" id="contact-text">Puno ime</label>
-            <br>
-            <input type="text" id="FullName" name="FullName">
-            <br>
-            <label for="email" id="contact-text">E-mail</label>
-            <br>
-            <input type="text" id="text-box" name="email">
-            <br>
-            <label for="importance" id="contact-text">Važnost</label>
-            <br>
-            <select id="text-box" name="importance">
-                <option value="low" id="contact-text">Niska</option>
-                <option value="medium" id="contact-text">Srednja</option>
-                <option value="high" id="contact-text">Visoka</option>
-            </select><br>
-            <label for="message" id="contact-text">Poruka</label>
-            <br>
-            <textarea id="message-text" name="message" rows="5" cols="30"></textarea>
-            <br>
-            <label for="newsletter" id="contact-text">Želim primati obavijesti</label>
-            <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
-            <br>
-            <input type="submit" value="POŠALJI" id="button-submit">
-            <input type="button" value="ODUSTANI" id="button-exit">
-        </form>
-    </div>
+        <div class="form-container" id="form-container">
+            <form class="contact-form" action="https://www.fulek.com/mvc/supit/project-contact-form" method="post">
+                <div class="title"><i class="fa-solid fa-envelope"></i> Kontaktirajte nas</div>
+                <br>
+                <label for="FullName" id="contact-text">Puno ime</label>
+                <br>
+                <input type="text" id="FullName" name="FullName">
+                <br>
+                <label for="email" id="contact-text">E-mail</label>
+                <br>
+                <input type="text" id="text-box" name="email">
+                <br>
+                <label for="importance" id="contact-text">Važnost</label>
+                <br>
+                <select id="text-box" name="importance">
+                    <option value="low" id="contact-text">Niska</option>
+                    <option value="medium" id="contact-text">Srednja</option>
+                    <option value="high" id="contact-text">Visoka</option>
+                </select><br>
+                <label for="message" id="contact-text">Poruka</label>
+                <br>
+                <textarea id="message-text" name="message" rows="5" cols="30"></textarea>
+                <br>
+                <label for="newsletter" id="contact-text">Želim primati obavijesti</label>
+                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                <br>
+                <input type="submit" value="POŠALJI" id="button-submit">
+                <input type="button" value="ODUSTANI" id="button-exit">
+            </form>
+        </div>
     </div>
 
     <div class="novosti">

@@ -4,3 +4,12 @@
   top: 0;
   z-index: 10;
 }
+
+#nastavni-plan,
+#odjavi-se {
+  display: none;
+}
+
+#username {
+  color: rgb(195, 195, 195);
+}

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/kontakt.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/auth.js"></script>
     <title>SUPIT PROJEKTNI</title>
 </head>
 
@@ -20,8 +21,11 @@
     <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="nav-item" id="prijavi-se">
                     <a class="nav-link" href="prijavi-se.html">Prijavi se <i class="fas fa-sign-in-alt"></i></a>
+                </li>
+                <li class="nav-item" id="odjavi-se">
+                    <a class="nav-link" href="#">Odjavi se <i class="fas fa-sign-out-alt"></i></a>
                 </li>
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="pocetna.html"><i class="fas fa-home"></i> Početna</a>
@@ -32,15 +36,21 @@
                 <li class="nav-item mx-3">
                     <a class="nav-link active" href="novosti.html"><i class="fas fa-info-circle"></i> Novosti</a>
                 </li>
-                <li class="nav-item mx-3">
+                <li class="nav-item mx-3" id="nastavni-plan">
                     <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Nastavni plan</a>
                 </li>
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="#" id="contact-popup"><i class="fas fa-envelope"></i> Kontakt</a>
                 </li>
             </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <span id="username"></span>
+                </li>
+            </ul>
         </div>
     </nav>
+
 
     <div id="form-background">
         <div class="form-container" id="form-container">

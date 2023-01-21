@@ -2,10 +2,6 @@ body {
     overflow: hidden;
 }
 
-#nastavni-plan {
-    display: none;
-}
-
 #typing-div {
     z-index: 1;
     height: 200px;
