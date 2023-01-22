@@ -1,0 +1,95 @@
+html,body {
+    overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body>* {
+    flex-shrink: 0;
+}
+
+.nastavni-plan {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 150px;
+    background-color: white;
+}
+
+.nastavni-plan p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: rgb(60, 60, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 700px;
+    border-bottom: 3px solid rgb(221, 141, 14);
+}
+
+.text {
+    font-family: Arial Black, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px;
+}
+
+.yellow {
+    color: rgb(255, 225, 0);
+}
+
+.text_u_slici {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    text-shadow: 2px 1px black;
+}
+
+.inputKolegij{
+    font-weight: bold;
+    margin-right: 20px;
+    height: 300px;
+}
+
+.inputKolegij > input{
+    min-width: 75%;
+    width: 100%;
+    border: 1px solid rgba(116, 116, 116, .499);
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+table{
+    margin-bottom: 50px;
+}
+
+table > thead > tr > th{
+    padding: 5px 20px 5px 5px;
+}
+
+table > tbody > tr:nth-child(even){
+    background-color: rgb(214, 213, 213);
+}
+
+table > tbody > tr > td{
+    padding: 5px;
+    border-top: 1px solid rgba(137, 137, 137, .4) ;
+    padding-right: 20px;
+}
+
+#sum > td{
+    font-weight: bold;
+    border-top: 2px solid rgb(120, 119, 119);
+    background-color: white;
+}

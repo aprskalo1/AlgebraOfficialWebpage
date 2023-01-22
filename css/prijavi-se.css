@@ -1,5 +1,11 @@
-body {
-    overflow: hidden;
+html,body {
+    overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body>* {
+    flex-shrink: 0;
 }
 
 .sign-in-container {

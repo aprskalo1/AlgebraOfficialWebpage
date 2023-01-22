@@ -9,12 +9,11 @@ window.onload = function () {
         odjaviSe.show();
         prijaviSe.hide();
         usernameSpan.html(localStorage.getItem('username'));
-    } else {
-        nastavniPlan.hide();
     }
 
     odjaviSe.click(function () {
         localStorage.clear();
         location.reload();
+        location.replace("pocetna.html");
     });
 }
