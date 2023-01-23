@@ -20,6 +20,18 @@ body {
     justify-content: center;
     height: 150px;
     background-color: white;
+    animation: slide-down 1s;
+    transform: translateY(0);
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .novosti p {
@@ -39,6 +51,28 @@ body {
     justify-content: center;
     align-items: center;
     height: 500px;
+    animation: zoom-fade-in 1s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+    opacity: 0;
+}
+
+@keyframes zoom-fade-in {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width:768px) {
+    .images {
+        display: block;
+    }
 }
 
 .images img {
@@ -81,6 +115,18 @@ body {
     background-image: url("../img/novost1.jpg");
     background-size: cover;
     height: 250px;
+    animation: slide-down 1s;
+    transform: translateY(0);
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .novost1-subtitle span {
@@ -97,6 +143,18 @@ body {
     justify-content: center;
     height: 150px;
     background-color: white;
+    animation: slide-up 1s;
+    transform: translateY(0);
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .novost-title p {
@@ -116,7 +174,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white;
+    animation: slide-up 1s;
+    transform: translateY(0);
 }
+
 
 .novost-text p {
     font-family: Arial, Helvetica, sans-serif;
@@ -167,6 +228,18 @@ body {
     background-image: url("../img/novost2.jpg");
     background-size: cover;
     height: 250px;
+    animation: slide-down 1s;
+    transform: translateY(0);
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .novost2-subtitle span {
@@ -186,4 +259,16 @@ body {
     background-image: url("../img/novost3.jpg");
     background-size: cover;
     height: 250px;
+    animation: slide-down 1s;
+    transform: translateY(0);
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }

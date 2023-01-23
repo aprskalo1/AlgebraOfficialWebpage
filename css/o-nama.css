@@ -24,7 +24,35 @@ body>* {
     height: 250px;
     background-image: url(../img/kampus-iz-zraka-min-1.jpg);
     background-position: center;
+    animation: slide-down 1s;
+    transform: translateY(0);
 }
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.navbar-buttons {
+    animation: slide-in 1s;
+    transform: translateX(0);
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
 
 .o-nama {
     display: flex;
@@ -32,7 +60,20 @@ body>* {
     justify-content: center;
     height: 100px;
     background-color: white;
+    animation: slide-up 1s;
+    transform: translateY(0);
 }
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
 
 .o-nama p {
     font-family: Arial, Helvetica, sans-serif;
@@ -50,6 +91,8 @@ body>* {
     display: flex;
     text-align: center;
     justify-content: center;
+    animation: slide-up 1s;
+    transform: translateY(0);
 }
 
 .podnaslov p {
@@ -65,6 +108,8 @@ body>* {
     justify-content: center;
     align-items: center;
     background-color: rgb(250, 250, 250);
+    animation: slide-up 1s;
+    transform: translateY(0);
 }
 
 .text span {
@@ -79,6 +124,12 @@ body>* {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 30px;
+}
+
+@media (max-width:768px) {
+    .container {
+        display: block;
+    }
 }
 
 .item {
@@ -121,6 +172,12 @@ body>* {
     grid-gap: 10px;
     width: 70%;
     margin: 0 auto;
+}
+
+@media (max-width:768px) {
+    .grid-container {
+        display: block;
+    }
 }
 
 .grid-item {
@@ -171,6 +228,12 @@ body>* {
     align-items: center;
     width: 750px;
     height: 500px;
+}
+
+@media (max-width:768px) {
+    .text-container {
+        flex-direction: column;
+    }
 }
 
 .location-text {
