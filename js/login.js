@@ -1,6 +1,4 @@
 window.onload = function () {
-    $('#message_login').hide();
-
     const form = {
         username: document.querySelector("#prijavi-se-textbox-email"),
         password: document.querySelector("#prijavi-se-textbox-password"),
