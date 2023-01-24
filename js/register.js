@@ -1,13 +1,11 @@
 window.onload = function () {
-    $('#message_login').hide();
-
     const form = {
         username: document.querySelector("#prijavi-se-textbox-email"),
         password: document.querySelector("#prijavi-se-textbox-password"),
         submit: document.querySelector("#sign-in-button"),
     };
 
-    let button = form.submit.addEventListener("click", (e) => {
+    form.submit.addEventListener("click", (e) => {
         e.preventDefault();
         if (!formIsValid()) {
             return;

@@ -5,7 +5,7 @@ window.onload = function () {
         submit: document.querySelector("#sign-in-button"),
     };
 
-    let button = form.submit.addEventListener("click", (e) => {
+    form.submit.addEventListener("click", (e) => {
         e.preventDefault();
         if (!formIsValid()) {
             return;
