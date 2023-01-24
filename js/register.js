@@ -29,8 +29,6 @@ window.onload = function () {
                 if (!podaci.isSuccess) {
                     $('#status-message').text("Korisničko ime već postoji!").show().delay(3000).hide(300);
                 } else {
-                    localStorage.setItem('token', podaci['token']);
-                    localStorage.setItem('username', podaci['username']);
                     $('#status-message').text("Registracija uspješna! Preusmjeravanje na stranicu prijave.").show().delay(3000).hide(300);
                     setTimeout(() => {
                         window.location.replace("prijavi-se.html");
