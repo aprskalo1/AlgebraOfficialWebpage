@@ -3,16 +3,19 @@ $(async () => {
     var line = $("#first-text");
     const data = "Budi izvrstan u onome što vidiš!$voliš!?ZAISKRI.";
 
-    for (let index = 0; index < data.length; index++) {
-        if (data[index] == '?') {
+    for (let i = 0; i < data.length; i++) {
+        if (data[i] == '?') {
             line.css({ 'animation': 'none' });
             line = $("#second-text");
-            line.css({ 'animation': 'blinkCursor 0.5s infinite' });
-        } else if (data[index] == '$') {
+            line.css({ 'animation': 'blinkCursor 1s infinite' });
+        } else if (data[i] == '$') {
             await timer(250);
-            line.text("Budi izvrstan u onom što ");
+            for (let j = 32; j >= 26; j--) {
+                line.text(line.text().substring(0, j));
+                await timer(100);
+            }
         } else {
-            line.append(data[index]);
+            line.append(data[i]);
         }
         await timer(150);
     }

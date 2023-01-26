@@ -11,18 +11,12 @@ window.onload = function () {
             return;
         }
         const login = "https://www.fulek.com/data/api/user/register";
-        fetch(login, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                username: form.username.value,
-                password: form.password.value,
-            }),
-        })
-            .then((response) => response.json())
-            .then((podaci) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", login, true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const podaci = JSON.parse(xhr.responseText);
                 console.log(podaci);
                 if (!podaci.isSuccess) {
                     $('#status-message').text("Korisničko ime već postoji!").show().delay(3000).hide(300);
@@ -32,10 +26,12 @@ window.onload = function () {
                         window.location.replace("prijavi-se.html");
                     }, 3000);
                 }
-            })
-            .catch((err) => {
-                console.log(err);
-            });
+            }
+        };
+        xhr.send(JSON.stringify({
+            username: form.username.value,
+            password: form.password.value,
+        }));
     });
 
     function formIsValid() {
